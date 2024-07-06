@@ -12,6 +12,10 @@ class Home
 	 */
 	public static function getHome(): string
 	{
-		return View::render('pages/home');
+		return View::render('pages/home', [
+			"nome" => "João Victor",
+			"description" => "Entre no site https://google.com",
+			"link" => "https://google.com.br"
+		]);
 	}
 }
